@@ -1,8 +1,14 @@
-# React + Vite
+# Org React Alura Latam - Oracle Next Education
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue desarrollado como parte de un challenge para Oracle Next Education - Alura Latam.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ORG es una plataforma para gestionar tu organización, donde puedes agregar y quitar personas a los equipos de tu empresa. La aplicación web permite a los usuarios gestionar equipos de manera eficiente a través de una interfaz intuitiva y fácil de usar.
+
+
+## Funcionalidades
+
+- Visualización de productos existentes.
+- Agregar nuevos productos mediante un formulario.
+- Eliminar productos existentes.
