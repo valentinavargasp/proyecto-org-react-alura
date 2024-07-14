@@ -5,11 +5,12 @@ import { CampoTexto } from '../CampoTexto/CampoTexto'
 import { OptionsList } from '../OptionsList/OptionsList'
 import { Button } from '../Button/Button'
 
-export const Formulario = () => {
+export const Formulario = (props) => {
   const [nombre, setNombre] = useState('')
   const [puesto, setPuesto] = useState('')
   const [foto, setFoto] = useState('')
   const [equipo, setEquipo] = useState('')
+  const { registrarColaborador, crearEquipo } = props
 
 
   const handleEnviar = (event) => {
@@ -21,8 +22,10 @@ export const Formulario = () => {
       foto,
       equipo
     }
-    console.log(datosSend);
+    registrarColaborador(datosSend);
   }
+
+
 
   return (
     <section className='formulario'>
@@ -49,9 +52,13 @@ export const Formulario = () => {
           value={foto}
           setValor={setFoto}
         />
-        <OptionsList value={equipo} setEquipo={setEquipo} />
+        <OptionsList value={equipo} 
+        setEquipo={setEquipo}
+        equipos={props.equipos} 
+        />
         <Button texto='Crear' />
       </form>
+
     </section>
   )
 }

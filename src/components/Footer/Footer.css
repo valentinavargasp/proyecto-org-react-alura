@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    display: flex;
+    padding: 5%;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.footer a img {
+    filter: invert(100%); 
+    padding: 0 15px;
+}
+
+.footer a {
+    text-decoration: none; 
+    color: inherit; 
+}
